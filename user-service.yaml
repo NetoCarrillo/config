@@ -1,0 +1,16 @@
+logging:
+  level:
+    root: INFO
+    net:
+      netosoft:
+        economics:
+          user: DEBUG
+
+server:
+  port: 8081
+
+spring:
+  data:
+    mongodb:
+      uri: mongodb://ecouser:ecosecret@localhost:27017/economics
+      database: economics

@@ -1,0 +1,21 @@
+eureka.client.serviceUrl.defaultZone: http://localhost:9100/eureka
+
+logging:
+  level:
+    root: INFO
+    net.netosoft.economics.transaction: DEBUG
+
+net.netosoft.economics.transaction.external-user.uri:
+  create: http://localhost:8081/api/
+  get: http://localhost:8081/api
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/economics
+    username: postgres
+    password: postgres1!
+  jpa:
+    show-sql: true
+    properties.hibernate.dialect: org.hibernate.dialect.PostgreSQLDialect
+    hibernate.ddl-auto: update
+
